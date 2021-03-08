@@ -1,10 +1,21 @@
 const chartService = {
-    damageInfo(knex) {
+    memberDamage(knex) {
         return knex.raw(`
-            select count(*), year(DateOfDamage), month(DateOfDamage)
+            select count(*), year(DateOfDamage) 
             from DamageData dd
-            group by year(DateOfDamage), month(DateOfDamage)
-            order by year(DateOfDamage), month(DateOfDamage);
+            where dd.[Source] = 'Member'
+            group by year(DateOfDamage)
+            order by year(DateOfDamage);
+        `)
+    },
+
+    excavatorDamage(knex) {
+        return knex.raw(`
+            select count(*), year(DateOfDamage) 
+            from DamageData dd
+            where dd.[Source] = 'Excavator'
+            group by year(DateOfDamage)
+            order by year(DateOfDamage);
         `)
     }
 }

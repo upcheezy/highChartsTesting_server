@@ -6,9 +6,18 @@ const highchartRouter = express.Router();
 const bodyParser = express.json();
 
 highchartRouter
-    .route('/damagequery')
+    .route('/memberdamage')
     .get((req, res, next) => {
-        chartService.damageInfo(req.app.get('db'))
+        chartService.memberDamage(req.app.get('db'))
+            .then(info => {
+                res.json(info)
+            })
+    })
+
+highchartRouter
+    .route('/excavatordamage')
+    .get((req, res, next) => {
+        chartService.excavatorDamage(req.app.get('db'))
             .then(info => {
                 res.json(info)
             })

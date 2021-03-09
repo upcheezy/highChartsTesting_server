@@ -8,7 +8,9 @@ const bodyParser = express.json();
 highchartRouter
     .route('/memberdamage')
     .get((req, res, next) => {
-        chartService.memberDamage(req.app.get('db'))
+        const {year} = req.query;
+        console.log(year)
+        chartService.memberDamage(req.app.get('db'), year)
             .then(info => {
                 res.json(info)
             })

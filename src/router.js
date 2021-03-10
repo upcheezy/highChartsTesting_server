@@ -10,7 +10,7 @@ highchartRouter
     .get((req, res, next) => {
         const {year} = req.query;
         console.log(year)
-        chartService.memberDamage(req.app.get('db'), year)
+        chartService.memberDamageLine(req.app.get('db'), year)
             .then(info => {
                 res.json(info)
             })

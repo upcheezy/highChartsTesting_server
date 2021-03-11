@@ -1,0 +1,11 @@
+Server listening at http://localhost:\\.\pipe\1212010f-a6f5-471d-b5f0-675b5f0e57b1
+- - - [10/Mar/2021:18:39:42 +0000] "GET / HTTP/1.1" 200 13
+- - - [10/Mar/2021:18:39:42 +0000] "GET /favicon.ico HTTP/1.1" 404 150
+2018
+2020
+2021
+- - - [10/Mar/2021:18:41:17 +0000] "GET /memberdamage?year=2018 HTTP/1.1" 500 72
+- - - [10/Mar/2021:18:41:17 +0000] "GET /memberdamage?year=2020 HTTP/1.1" 500 72
+- - - [10/Mar/2021:18:41:17 +0000] "GET /memberdamage?year=2021 HTTP/1.1" 500 72
+2019
+- - - [10/Mar/2021:18:41:17 +0000] "GET /memberdamage?year=2019 HTTP/1.1" 500 72

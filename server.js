@@ -1,11 +1,11 @@
 const knex = require('knex');
-const app = require('./app');
+const app = require('./src/app');
 const {
     PORT,
     DATABASE_USER,
     DATABASE_PASS,
     DATABASE
-} = require('./config');
+} = require('./src/config');
 
 db = knex({
     client: 'mssql',

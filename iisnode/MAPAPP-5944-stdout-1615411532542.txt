@@ -1,0 +1,25 @@
+Server listening at http://localhost:\\.\pipe\5a7a643b-45aa-4d8c-a08d-f7c076206845
+2021
+- - - [10/Mar/2021:21:25:33 +0000] "GET /memberdamage?year=2021 HTTP/1.1" 200 117
+2018
+2019
+2020
+- - - [10/Mar/2021:21:25:33 +0000] "GET /memberdamage?year=2018 HTTP/1.1" 200 469
+- - - [10/Mar/2021:21:25:33 +0000] "GET /memberdamage?year=2019 HTTP/1.1" 200 470
+- - - [10/Mar/2021:21:25:33 +0000] "GET /memberdamage?year=2020 HTTP/1.1" 200 471
+2018
+2019
+2021
+2020
+- - - [10/Mar/2021:21:28:16 +0000] "GET /memberdamage?year=2018 HTTP/1.1" 304 -
+- - - [10/Mar/2021:21:28:16 +0000] "GET /memberdamage?year=2019 HTTP/1.1" 304 -
+- - - [10/Mar/2021:21:28:16 +0000] "GET /memberdamage?year=2021 HTTP/1.1" 304 -
+- - - [10/Mar/2021:21:28:16 +0000] "GET /memberdamage?year=2020 HTTP/1.1" 304 -
+2018
+2021
+2019
+2020
+- - - [10/Mar/2021:21:28:25 +0000] "GET /memberdamage?year=2018 HTTP/1.1" 304 -
+- - - [10/Mar/2021:21:28:25 +0000] "GET /memberdamage?year=2019 HTTP/1.1" 304 -
+- - - [10/Mar/2021:21:28:25 +0000] "GET /memberdamage?year=2021 HTTP/1.1" 304 -
+- - - [10/Mar/2021:21:28:25 +0000] "GET /memberdamage?year=2020 HTTP/1.1" 304 -

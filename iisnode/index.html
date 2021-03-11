@@ -1,0 +1,87 @@
+<html>
+<head>
+    <title>iisnode logs</title>
+    <style type="text/css">
+        body
+        {
+            font-family: "Trebuchet MS" , Arial, Helvetica, sans-serif;
+        }
+        table
+        {
+            border-collapse: collapse;
+        }
+        td, th
+        {
+            border: 1px solid lightgray;
+            padding: 3px 7px 2px 7px;
+        }
+        th
+        {
+            text-align: left;
+            padding-top: 5px;
+            padding-bottom: 4px;
+            background-color: Gray;
+            color: #ffffff;
+        }
+        td.stderr
+        {
+            color: Red;
+        }
+    </style>
+</head>
+<body>
+    <table id="logFilesTable">
+        <tr>
+            <th>
+                Computer name
+            </th>
+            <th>
+                PID
+            </th>
+            <th>
+                Type
+            </th>
+            <th>
+                Created
+            </th>
+            <th>
+                Link
+            </th>
+        </tr>
+    </table>
+    <p id="lastUpdated"></p>
+    <script type="text/javascript">
+
+        // this is replaced with actual data at runtime by code in interceptor.js
+        var logFiles = [{"file":"MAPAPP-3168-stderr-1615400226228.txt","computername":"MAPAPP","pid":3168,"type":"stderr","created":1615400226228},{"file":"MAPAPP-3568-stderr-1615400266438.txt","computername":"MAPAPP","pid":3568,"type":"stderr","created":1615400266438},{"file":"MAPAPP-3568-stdout-1615400266437.txt","computername":"MAPAPP","pid":3568,"type":"stdout","created":1615400266437},{"file":"MAPAPP-3952-stderr-1615399571319.txt","computername":"MAPAPP","pid":3952,"type":"stderr","created":1615399571319},{"file":"MAPAPP-5476-stderr-1615399570459.txt","computername":"MAPAPP","pid":5476,"type":"stderr","created":1615399570459},{"file":"MAPAPP-5944-stderr-1615411532545.txt","computername":"MAPAPP","pid":5944,"type":"stderr","created":1615411532545},{"file":"MAPAPP-5944-stdout-1615411532542.txt","computername":"MAPAPP","pid":5944,"type":"stdout","created":1615411532542},{"file":"MAPAPP-7716-stderr-1615408593637.txt","computername":"MAPAPP","pid":7716,"type":"stderr","created":1615408593637},{"file":"MAPAPP-7716-stdout-1615408593635.txt","computername":"MAPAPP","pid":7716,"type":"stdout","created":1615408593635},{"file":"MAPAPP-8404-stderr-1615401581369.txt","computername":"MAPAPP","pid":8404,"type":"stderr","created":1615401581369},{"file":"MAPAPP-8404-stdout-1615401581368.txt","computername":"MAPAPP","pid":8404,"type":"stdout","created":1615401581368},{"file":"MAPAPP-888-stderr-1615401929289.txt","computername":"MAPAPP","pid":888,"type":"stderr","created":1615401929289},{"file":"MAPAPP-888-stdout-1615401929287.txt","computername":"MAPAPP","pid":888,"type":"stdout","created":1615401929287},{"file":"MAPAPP-9268-stderr-1615400226755.txt","computername":"MAPAPP","pid":9268,"type":"stderr","created":1615400226755},{"file":"MAPAPP-9292-stderr-1615476509459.txt","computername":"MAPAPP","pid":9292,"type":"stderr","created":1615476509459},{"file":"MAPAPP-9292-stdout-1615476509456.txt","computername":"MAPAPP","pid":9292,"type":"stdout","created":1615476509456},{"file":"MAPAPP-9792-stderr-1615402110935.txt","computername":"MAPAPP","pid":9792,"type":"stderr","created":1615402110935},{"file":"MAPAPP-9792-stdout-1615402110932.txt","computername":"MAPAPP","pid":9792,"type":"stdout","created":1615402110932},{"file":"MAPAPP-9828-stderr-1615400392482.txt","computername":"MAPAPP","pid":9828,"type":"stderr","created":1615400392482},{"file":"MAPAPP-9828-stdout-1615400392480.txt","computername":"MAPAPP","pid":9828,"type":"stdout","created":1615400392480}];
+        var lastUpdated = 1615476510406;
+        var date = new Date();
+
+        date.setTime(lastUpdated);
+        document.getElementById('lastUpdated').innerHTML = 'Index was last updated ' + date;
+
+        logFiles.sort(function (a, b) {
+            return b.created - a.created;
+        });
+
+        var logFilesTable = document.getElementById("logFilesTable");
+        for (var i = 0; i < logFiles.length; i++) {
+            var logFile = logFiles[i];
+            date.setTime(logFile.created);
+            var row = logFilesTable.insertRow(-1);
+            var computerNameCell = row.insertCell(0);
+            var pidCell = row.insertCell(1);
+            var typeCell = row.insertCell(2);
+            var dateCell = row.insertCell(3);
+            var logCell = row.insertCell(4);
+            computerNameCell.innerHTML = logFile.computername;
+            pidCell.innerHTML = logFile.pid.toString();
+            typeCell.innerHTML = logFile.type;
+            typeCell.setAttribute('class', logFile.type);
+            dateCell.innerHTML = date.toString();
+            logCell.innerHTML = '<a href="' + logFile.file + '">log</a>';
+        };
+
+    </script>
+</body>
+</html>

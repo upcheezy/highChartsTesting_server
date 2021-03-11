@@ -1,5 +1,5 @@
 const chartService = {
-    memberDamage(knex, year) {
+    memberDamageLine(knex, year) {
         return knex.raw(`
         select count(*), 
         year(DateOfDamage), 

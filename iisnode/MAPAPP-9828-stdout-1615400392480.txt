@@ -1,0 +1,2 @@
+Server listening at http://localhost:\\.\pipe\2cfd398c-b299-44b5-912d-6db568acf661
+- - - [10/Mar/2021:18:19:53 +0000] "GET / HTTP/1.1" 304 -

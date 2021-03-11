@@ -1,0 +1,12 @@
+Server listening at http://localhost:\\.\pipe\dc9c519b-6f77-4414-bba0-3aeedf75004b
+2018
+2019
+2020
+2021
+- - - [10/Mar/2021:18:45:30 +0000] "GET /memberdamage?year=2021 HTTP/1.1" 200 117
+- - - [10/Mar/2021:18:45:30 +0000] "GET /memberdamage?year=2018 HTTP/1.1" 200 469
+- - - [10/Mar/2021:18:45:30 +0000] "GET /memberdamage?year=2019 HTTP/1.1" 200 470
+- - - [10/Mar/2021:18:45:30 +0000] "GET /memberdamage?year=2020 HTTP/1.1" 200 471
+- - - [10/Mar/2021:18:46:22 +0000] "GET / HTTP/1.1" 200 13
+- - - [10/Mar/2021:18:47:08 +0000] "GET / HTTP/1.1" 200 13
+- - - [10/Mar/2021:18:47:08 +0000] "GET /favicon.ico HTTP/1.1" 404 150

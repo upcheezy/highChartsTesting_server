@@ -1,0 +1,15 @@
+Application has thrown an uncaught exception and is terminated:
+Error: Cannot find module 'knex'
+Require stack:
+- C:\Servers\highChartsTesting_server\server.js
+- C:\Program Files\iisnode\interceptor.js
+    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:1065:15)
+    at Function.Module._load (internal/modules/cjs/loader.js:911:27)
+    at Module.require (internal/modules/cjs/loader.js:1125:19)
+    at require (internal/modules/cjs/helpers.js:75:18)
+    at Object.<anonymous> (C:\Servers\highChartsTesting_server\server.js:1:14)
+    at Module._compile (internal/modules/cjs/loader.js:1236:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1257:10)
+    at Module.load (internal/modules/cjs/loader.js:1085:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:950:14)
+    at Module.require (internal/modules/cjs/loader.js:1125:19)

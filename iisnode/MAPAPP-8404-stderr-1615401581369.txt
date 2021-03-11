@@ -1,0 +1,46 @@
+(node:8404) [DEP0005] DeprecationWarning: Buffer() is deprecated due to security and usability issues. Please use the Buffer.alloc(), Buffer.allocUnsafe(), or Buffer.from() methods instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+TypeError: chartService.memberDamageLine is not a function
+    at C:\Servers\highChartsTesting_server\src\router.js:13:22
+    at Layer.handle [as handle_request] (C:\Servers\highChartsTesting_server\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Servers\highChartsTesting_server\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (C:\Servers\highChartsTesting_server\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (C:\Servers\highChartsTesting_server\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Servers\highChartsTesting_server\node_modules\express\lib\router\index.js:281:22
+    at Function.process_params (C:\Servers\highChartsTesting_server\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Servers\highChartsTesting_server\node_modules\express\lib\router\index.js:275:10)
+    at Function.handle (C:\Servers\highChartsTesting_server\node_modules\express\lib\router\index.js:174:3)
+    at router (C:\Servers\highChartsTesting_server\node_modules\express\lib\router\index.js:47:12)
+TypeError: chartService.memberDamageLine is not a function
+    at C:\Servers\highChartsTesting_server\src\router.js:13:22
+    at Layer.handle [as handle_request] (C:\Servers\highChartsTesting_server\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Servers\highChartsTesting_server\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (C:\Servers\highChartsTesting_server\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (C:\Servers\highChartsTesting_server\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Servers\highChartsTesting_server\node_modules\express\lib\router\index.js:281:22
+    at Function.process_params (C:\Servers\highChartsTesting_server\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Servers\highChartsTesting_server\node_modules\express\lib\router\index.js:275:10)
+    at Function.handle (C:\Servers\highChartsTesting_server\node_modules\express\lib\router\index.js:174:3)
+    at router (C:\Servers\highChartsTesting_server\node_modules\express\lib\router\index.js:47:12)
+TypeError: chartService.memberDamageLine is not a function
+    at C:\Servers\highChartsTesting_server\src\router.js:13:22
+    at Layer.handle [as handle_request] (C:\Servers\highChartsTesting_server\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Servers\highChartsTesting_server\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (C:\Servers\highChartsTesting_server\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (C:\Servers\highChartsTesting_server\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Servers\highChartsTesting_server\node_modules\express\lib\router\index.js:281:22
+    at Function.process_params (C:\Servers\highChartsTesting_server\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Servers\highChartsTesting_server\node_modules\express\lib\router\index.js:275:10)
+    at Function.handle (C:\Servers\highChartsTesting_server\node_modules\express\lib\router\index.js:174:3)
+    at router (C:\Servers\highChartsTesting_server\node_modules\express\lib\router\index.js:47:12)
+TypeError: chartService.memberDamageLine is not a function
+    at C:\Servers\highChartsTesting_server\src\router.js:13:22
+    at Layer.handle [as handle_request] (C:\Servers\highChartsTesting_server\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Servers\highChartsTesting_server\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (C:\Servers\highChartsTesting_server\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (C:\Servers\highChartsTesting_server\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Servers\highChartsTesting_server\node_modules\express\lib\router\index.js:281:22
+    at Function.process_params (C:\Servers\highChartsTesting_server\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Servers\highChartsTesting_server\node_modules\express\lib\router\index.js:275:10)
+    at Function.handle (C:\Servers\highChartsTesting_server\node_modules\express\lib\router\index.js:174:3)
+    at router (C:\Servers\highChartsTesting_server\node_modules\express\lib\router\index.js:47:12)
